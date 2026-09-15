@@ -7,10 +7,22 @@ spec:
   owner: Application Enablement
 metadata:
   name: java-maven-pipeline-example
-  description: Application Enablement pipeline testing example for Java + Maven + Tomcat
-    application in bcgov
+  description: Application Enablement pipeline testing example for Java + Maven +
+    Tomcat application in bcgov
   title: ONETEAM-EXAMPLE
   annotations:
     license: Apache-2.0
-    github.com/project-slug: bcgov/nr-app-enablement-pipeline-sample
-    composer.io.nrs.gov.bc.ca/generators: backstage
+    composer.io.nrs.gov.bc.ca/generators: backstage,gh-maven-build
+    playbook.io.nrs.gov.bc.ca/clientId: e985d455-b0ff-470b-8731-e004fcfac915
+    playbook.io.nrs.gov.bc.ca/javaVersion: "21"
+    playbook.io.nrs.gov.bc.ca/javaPattern: Tomcat
+    playbook.io.nrs.gov.bc.ca/pomRoot: ./
+    playbook.io.nrs.gov.bc.ca/ociArtifacts: ""
+    playbook.io.nrs.gov.bc.ca/publishArtifactSuffix: dist
+    playbook.io.nrs.gov.bc.ca/unitTestsPath: ""
+    playbook.io.nrs.gov.bc.ca/artifactRepositoryType: GitHubPackages
+    playbook.io.nrs.gov.bc.ca/toolsBuildSecrets: ARTIFACTORY_USERNAME,ARTIFACTORY_PASSWORD
+    playbook.io.nrs.gov.bc.ca/toolsLocalBuildSecrets: ARTIFACTORY_USERNAME,ARTIFACTORY_PASSWORD
+    playbook.io.nrs.gov.bc.ca/mavenBuildCommand: --batch-mode -Dmaven.test.skip=true -Pgithub clean package
+    github.com/project-slug: bcgov/nr-appenablement-pipeline-sample
+    playbook.io.nrs.gov.bc.ca/artifactRepositoryPath: https://maven.pkg.github.com/bcgov/nr-appenablement-pipeline-sample
