@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+spec:
+  system: oscar-example
+  type: website
+  lifecycle: experimental
+  owner: Application Enablement
+metadata:
+  name: java-maven-pipeline-example
+  description: Application Enablement pipeline testing example for Java + Maven + Tomcat
+    application in bcgov
+  title: ONETEAM-EXAMPLE
+  annotations:
+    license: Apache-2.0
+    github.com/project-slug: bcgov/nr-app-enablement-pipeline-sample
+    composer.io.nrs.gov.bc.ca/generators: backstage
