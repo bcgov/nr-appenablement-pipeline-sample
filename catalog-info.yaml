@@ -12,7 +12,7 @@ metadata:
   title: ONETEAM-EXAMPLE
   annotations:
     license: Apache-2.0
-    composer.io.nrs.gov.bc.ca/generators: backstage,gh-maven-build
+    composer.io.nrs.gov.bc.ca/generators: backstage,gh-maven-build,gh-oci-deploy-onprem
     playbook.io.nrs.gov.bc.ca/clientId: e985d455-b0ff-470b-8731-e004fcfac915
     playbook.io.nrs.gov.bc.ca/javaVersion: "21"
     playbook.io.nrs.gov.bc.ca/javaPattern: Tomcat
@@ -26,3 +26,13 @@ metadata:
     playbook.io.nrs.gov.bc.ca/mavenBuildCommand: --batch-mode -Dmaven.test.skip=true -Pgithub clean package
     github.com/project-slug: bcgov/nr-appenablement-pipeline-sample
     playbook.io.nrs.gov.bc.ca/artifactRepositoryPath: https://maven.pkg.github.com/bcgov/nr-appenablement-pipeline-sample
+    playbook.io.nrs.gov.bc.ca/postDeployTestsPath: ""
+    playbook.io.nrs.gov.bc.ca/deployType: tomcat
+    playbook.io.nrs.gov.bc.ca/artifactSrc: repo
+    playbook.io.nrs.gov.bc.ca/deploymentConfigPaths: playbooks
+    playbook.io.nrs.gov.bc.ca/tomcatContext: pub#java-maven-pipeline-example
+    playbook.io.nrs.gov.bc.ca/useAltAppDirName: false
+    playbook.io.nrs.gov.bc.ca/addLog4j2Config: false
+    playbook.io.nrs.gov.bc.ca/addTomcatContext: true
+    playbook.io.nrs.gov.bc.ca/createDataTmpDir: false
+    playbook.io.nrs.gov.bc.ca/addWebadeConfig: false
