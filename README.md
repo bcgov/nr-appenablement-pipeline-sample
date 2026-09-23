@@ -1,5 +1,5 @@
-# nr-oscar-java-pipeline-example
-Pipeline testing example for Java + Maven + Tomcat application on private repo
+# nr-appenablement-pipeline-sample
+Pipeline testing example for Java + Maven + Tomcat application
 
 # Running Locally
 (need maven and java installed)
